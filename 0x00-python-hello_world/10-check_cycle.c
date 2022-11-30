@@ -19,8 +19,10 @@ int check_cycle(listint_t *list)
 
 	while (i && k && k->next)
 	{
-		k = k->next;
-		i = i->next->next;;		
+
+		if (k == i->next && k)
+			return (1);
+		i = i->next->next;		
 		if (k == i && k && i)
 		{
 			return (1);
