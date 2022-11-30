@@ -20,8 +20,9 @@ int check_cycle(listint_t *list)
 	while (i && k && k->next)
 	{
 
-		if (k == i->next && k)
+		if (k == k->next && k)
 			return (1);
+		k = k->next;
 		i = i->next->next;		
 		if (k == i && k && i)
 		{
