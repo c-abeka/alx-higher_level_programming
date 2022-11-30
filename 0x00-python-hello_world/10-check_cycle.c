@@ -9,22 +9,18 @@
  */
 int check_cycle(listint_t *list)
 {
-	listint_t *i, *k;
+	listint_t *i = list, *k = list;
 
 	if (!list)
 		return (0);
 
-	i = list;
-	k = list;
 
 	while (i && k && k->next)
 	{
 
-		if (k == k->next && k)
-			return (1);
 		k = k->next;
 		i = i->next->next;		
-		if (k == i && k && i)
+		if (k == i)
 		{
 			return (1);
 		}
