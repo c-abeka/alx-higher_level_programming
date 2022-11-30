@@ -24,7 +24,10 @@ int check_cycle(listint_t *list)
 		if (k == i)
 		{
 			while (k && i)
-				return (1);
+			{
+				if (k == i)
+					return (1);
+			}
 		}
 	}
 	return (0);
