@@ -8,5 +8,4 @@ def max_integer(my_list=[]):
         if x > max_v:
             max_v = x
         i += 1
-        
-    return max_v
+        return max_v
