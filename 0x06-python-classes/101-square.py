@@ -56,10 +56,21 @@ class Square:
                     print('#' * self.__size)
 
     def __str__(self):
-        p1 = '' * self.__position[1]
-        p0 = ' ' * self.__position[0]
-        sq = '#' * self.__size
-        return p1 + "\n" + (p0 + sq + '\n') * self.__size
+        if self.__size == 0:
+            print()
+            return None
+        else:
+            for i in range(self.__position[1]):
+                print('')
+            for i in range(self.__size):
+                if self.__position[0] == 0:
+                    print('#' * self.__size)
+                else:
+                    print(" " * self.__position[0], end='')
+                    print('#' * self.__size)
+        return ""
+
+
 
     @property
     def position(self):
