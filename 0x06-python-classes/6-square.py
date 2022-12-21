@@ -46,6 +46,8 @@ class Square:
             return None
 
         else:
+            for i in range(self.__position[1]):
+                print('')
             for i in range(self.__size):
                 if self.__position[0] == 0:
                     print('#' * self.__size)
