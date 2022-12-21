@@ -8,14 +8,12 @@ class Node:
         '''
         __init__(self, data): instantiate data field
 
-        Fields: 
+        Fields:
         data: must be of type int
         next_node: pointer to next item
-
-        Raises: 
+        Raises:
         TypeError: must be int
         TypeError(next_node): should be None or Node object
-        
         self.data = data
         '''
         self.data = data
@@ -37,11 +35,12 @@ class Node:
         return self.__next_node
 
     @next_node.setter
-    def next_node(self, value) :
+    def next_node(self, value):
         if isinstance(value, Node) or value is None:
             self.__next_node = value
         else:
             raise TypeError('next_node must be a Node object')
+
 
 ''' SinglyLinkedList class '''
 
@@ -50,6 +49,7 @@ class SinglyLinkedList:
     ''' singly linked list object '''
     def __init__(self):
         self.__head = None
+
     def sorted_insert(self, value):
         new = Node(value)
         if self.__head is None:
@@ -60,7 +60,7 @@ class SinglyLinkedList:
             self.__head = new
         else:
             temp = self.__head
-            while(temp.next_node is not None and temp.next_node.data < value):
+            while (temp.next_node is not None and temp.next_node.data < value):
                 temp = temp.next_node
             new.next_node = temp.next_node
             temp.next_node = new
