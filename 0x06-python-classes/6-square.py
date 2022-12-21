@@ -47,7 +47,8 @@ class Square:
             if self.__position[0] == 0:
                 print('#' * self.__size)
             else:
-                print(" " * self.__position[0] + '#' * self.__size)
+                print(" " * self.__position[0], end='')
+                print('#' * self.__size)
 
     @property
     def position(self):
