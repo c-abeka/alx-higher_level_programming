@@ -41,14 +41,14 @@ OverflowError: cannot convert float infinity to integer
 
 Functional tests
 ----------------
-Adding positive integers
+## Test case #5: Adding positive integers
 >>> add(4, 6)
 10
 
-Adding negative and positive
+## Test case #6: Adding negative and positive
 >>> add(-10, 12)
 2
 
-Adding negative numbers
+## Test case #7: Adding negative numbers
 >>> add(-10, -4)
 -14
