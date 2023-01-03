@@ -9,7 +9,7 @@ Import
 ======
 ---- matrix_divided() imported as matrix() ---
 -
->>> matrix = __import__('2-matrix_divided.py').matrix_divided
+>>> matrix = __import__('2-matrix_divided').matrix_divided
 
 Tests
 =====
@@ -23,7 +23,7 @@ Traceback (most recent call last):
 TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 ## Test case #2: list of mixed values
->>> mixedMatrix = [[a, 3], [2, 2]]
+>>> mixedMatrix = [['a', 3], [2, 2]]
 >>> matrix(mixedMatrix, 3)
 Traceback (most recent call last):
 TypeError: matrix must be a matrix (list of lists) of integers/floats
@@ -55,5 +55,10 @@ Functional Tests
 ================
 ## Test case #6: divide and round to 2 decimal places
 >>> matrix(mx, 3)
-[[0.67, 1.00], [1.33, 1.67]]
+[[0.67, 1.0], [1.33, 1.67]]
+
+## Test case #7: empty matrix
+>>> mx = [[]]
+>>> matrix(mx, 2)
+[[]]
 
