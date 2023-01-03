@@ -29,4 +29,5 @@ def text_indentation(text):
         elif char in split_char:
             temp += char
             print(temp.strip())
+            print()
             temp = ""
