@@ -16,6 +16,9 @@ Test case #0: empty list
 >>> print(my_list)
 []
 
+>>> my_list.print_sorted()
+[]
+
 >>> my_list = MyList([3,6,2,4])
 >>> print(my_list)
 [3, 6, 2, 4]
