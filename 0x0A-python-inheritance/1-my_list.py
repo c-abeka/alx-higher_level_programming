@@ -4,9 +4,8 @@
 
 class MyList(list):
     ''' inherits from list object '''
-    def __init__(self):
-        list.__init__(self)
 
     def print_sorted(self):
         ''' print list in sorted ascending order '''
-        print(sorted(self))
+        if issubclass(MyList, list):
+            print(sorted(self))
