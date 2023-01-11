@@ -6,7 +6,7 @@ def inherits_from(obj, a_class):
     ''' checks if an object is an inherited instance of a
         class.
 
-        Args: 
+        Args:
             @obj: the object
             @a_class: class to match type of object to
 
