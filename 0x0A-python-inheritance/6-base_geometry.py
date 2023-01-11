@@ -1,6 +1,7 @@
 #!/usr/bin/python3,m
 ''' Module class BaseGeometry '''
 
+
 class BaseGeometry:
     ''' represents base geometry '''
 
